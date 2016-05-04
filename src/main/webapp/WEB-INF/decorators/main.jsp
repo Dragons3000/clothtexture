@@ -42,51 +42,8 @@
 	<div class="row col-lg-12">
 		<div class="col-lg-3">
 			<div class="panel-group" id="accordion">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#menuUno"> <span class="glyphicon glyphicon-folder-close"></span>Empresas
-							</a>
-						</h4>
-					</div>
-					<div id="menuUno" class="panel-collapse collapse in">
-						<ul class="list-group">
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-pencil text-success"></span>
-								<a href="frmAltaEmpresa.do">Alta Empresa</a>
-							</li>
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="frmListadoEmpresas.do">Ver Empresas</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+			
 
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#menuVentas"> <span class="glyphicon glyphicon-folder-close"></span>Ventas</a>
-						</h4>
-					</div>
-					<div id="menuVentas" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="frmRegistrarVenta.do?claveEmpresa=<sec:authentication property="name" />">Punto de Venta</a>
-							</li>
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoClientes.do?claveEmpresa=<sec:authentication property='name' />">Clientes</a>
-							</li>
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="frmCotizacion.do?claveEmpresa=<sec:authentication property='name' />">Cotización</a>
-							</li>
-							
-						</ul>
-					</div>
-				</div>
 				
 				
 				<div class="panel panel-default">
@@ -126,61 +83,10 @@
 					</div>
 				</div>
 				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#menuEmpleados"> <span class="glyphicon glyphicon-folder-close"></span>Empleados</a>
-						</h4>
-					</div>
-					<div id="menuEmpleados" class="panel-collapse collapse">
-						<ul class="list-group">
-						<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoUsersAdmin.do"> Administradores Principal</a>
-							</li>
-						
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoEmpleados.do?claveEmpresa=<sec:authentication property='name' />">Ver Empleados</a>
-							</li>
-							
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoCredito.do?claveEmpresa=<sec:authentication property='name' />">Asignar Credito</a>
-							</li>
-							
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="frmCatalogoCliente.do?claveEmpresa=<sec:authentication property='name' />">Credito y Cobranza</a>
-							</li>
-							
-						</ul>
-						
-							
-							
-							
-					</div>
-				</div>
+				
 
 
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#menuCinco"> <span class="glyphicon glyphicon-folder-close"></span>Almac&eacute;n
-							</a>
-						</h4>
-					</div>
-					<div id="menuCinco" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span> <a href="#">Articles</a>
-								<ul class="list-group">
-									<li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span> <a href="#">Articles</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-file text-info"></span> <a href="#">Newsletters</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-comment text-success"></span> <a href="#">Comments</a></li>
-								</ul></li>
-						</ul>
-					</div>
+				
 				</div>
 
 				<div class="panel panel-default">
@@ -209,22 +115,7 @@
 							</a>
 						</h4>
 					</div>
-					<div id="menuSiete" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item"><span class="glyphicon glyphicon-list-alt text-primary"></span> <a href="#">Reportes</a>
-								<ul class="list-group">
-									<li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span> <a href="#">Ventas</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-file text-info"></span> <a href="#">Compras</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-comment text-success"></span> <a href="#">Margenes</a></li>
-								</ul></li>
-							<li class="list-group-item"><span class="glyphicon glyphicon-screenshot text-primary"></span> <a href="#">Indicadores</a>
-								<ul class="list-group">
-									<li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span> <a href="#">Dashboard</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-file text-info"></span> <a href="#">Ventas</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-comment text-success"></span> <a href="#">Compras</a></li>
-								</ul></li>
-						</ul>
-					</div>
+				
 				</div>
 			</div>
 		</div>
