@@ -1,0 +1,144 @@
+#miniformulario{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 5%;
+	background-color: white;
+	opacity: 0.9;
+	border-style: dotted;
+	border-color: #E6E6E6;
+	margin-bottom: 5%;
+}
+
+#formulario{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	background-color: white;
+	opacity: 100%;
+	margin-bottom: 5%;
+}
+
+#titulo{
+	text-align: center;
+}
+
+#agregar{
+	width: 20%;
+	margin-left: 40%;
+ 	background-color: #F3E2A9;
+ 	margin-bottom: 5%;
+ 	opacity: 2.6;
+}
+
+/*Estilos del menu*/
+
+#men{
+	text-align: center;
+	width: 80%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	color: white;
+	float: left;
+	clear: both;
+	height: 60px;
+}
+
+#logo{
+	width: 45%;
+	margin-top: -5%;
+}
+
+.navbar-default{
+	/*background-color: #F3E2A9;*/
+	background-color: white;
+	opacity: 0.9;
+	border-style: dashed;
+	color: white;
+}
+
+/*Aqui se asigna el color de los enlaces en el menu*/
+.navbar-default .navbar-nav > li > a {
+    color: orange;
+}
+
+/*Aqui se cambia el color de los enlaces en el menu al pasar el cursors*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: brown;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: brown;
+    background-color: orange;
+}
+
+#opcion{
+	float: right;
+}
+
+/*Estilos editar_libro*/
+
+#base{
+	background: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	opacity: 0.9;
+}
+
+#base1{
+	background: white;
+	margin-left: 16%;
+	margin-right: 16%;
+	opacity: 0.9;
+	text-align: center;
+	line-height: 0.7em;
+
+}
+
+#info{
+	width: 60%;
+	text-align: left;
+	margin-left: 20%;
+	margin-right: 20%;
+	line-height: 3.5em;
+	background: white;
+	height: 650px;
+	margin-bottom: 10%;
+}
+
+#id{
+	visibility: collapse;
+}
+
+#cajas{
+	float: right;
+	width: 55%;
+}
+
+#campos{
+	margin-top: -10%;
+	
+}
+
+#bt1{
+	margin-left: 5%;
+	width: 20%;
+}
+
+#bt2{
+	width: 20%;
+}
+
+#contenedor{
+	border-style: dotted;
+	border-color: #E6E6E6;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#cont{
+	margin-top: 2%;
+}
