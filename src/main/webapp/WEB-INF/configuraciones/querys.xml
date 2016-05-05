@@ -2,10 +2,26 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 
 <properties>
-	<entry key="autor.alta">
+	<entry key="user.alta">
 		<![CDATA[
-			insert into autor(nombre_autor,apat_autor,amat_autor,pais_autor,nacimiento_autor)
-			values(?,?,?,?,?) 
+			 insert into usuario values(?,SHA2(?,256),1,?)
 		]]>
 	</entry>
+	<entry key="userstatus.change">
+		<![CDATA[
+		    	update usuario set estatusUsuario=? where nombreUsuario=?
+		]]>
+	</entry>
+	<entry key="users.catalogo">
+		<![CDATA[
+		    	select nombreUsuario,estatusUsuario from usuario
+		]]>
+	</entry>
+	<entry key="user.delete">
+		<![CDATA[
+		    	delete from  usuario where nombreUsuario=?
+		]]>
+	</entry>
+	
+	
 </properties>

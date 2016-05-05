@@ -4,8 +4,8 @@ $(document).ready(function(){
 });
 
 function dataTableToAll(){
-	$("#tablaAutor").dataTable(parametrosDataTable);
-	$("#tablaLibros").dataTable(parametrosDataTable);
+	$("#tablaUsers").dataTable(parametrosDataTable);
+	
 	
 }
 

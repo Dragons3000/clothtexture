@@ -4,123 +4,76 @@
 <html lang="es">
 
 <head>
-	
-	<meta name="decorator" content="main" />
-	<meta charset="UTF-8" />
-	
-	<title>Rosela Desing Pro<decorator:title /></title>
-	
-	<link rel="shortcut icon" href="${pageContext.request.contextPath}/estaticos/images/rosela.png" />
-	<link rel="icon" type="image/gif" href="${pageContext.request.contextPath}/estaticos/images/rosela.png" />
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/bootstrap.min.css" />
+<meta charset="utf-8" />
+<title>Rosela Desing Pro - <decorator:title /></title>
+<link rel="icon" type="image/gif" href="${pageContext.request.contextPath}/estaticos/imagenes/rosela.png" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/bootstrap-submenu.min.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/dataTables.jqueryui.min.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/banner.css" />
 </head>
 
 <body>
-
-	<div class="row">
-		<div class="row-fluid col-lg-12 cabecera">
-			<div class="col-lg-3">
-				<p class="pull-left" id="fechaHora"></p>
-			</div>
-			<div class="col-lg-9">
-				<p class="pull-right">
+	<div class="container">
+		<div class="row-fluid col-lg-12">
+			<nav class="navbar navbar-default" role="navigation">
+				<div>
+					<a class="navbar-brand" href="frmMenuPincipal.do"> <img alt="Rosela Desing Pro" src="${pageContext.request.contextPath}/estaticos/imagenes/rosela.png" class="img-responsive" style="width: 100px;" />
+					</a>
+					<p class="navbar-text pull-right">
 						Usuario: <a href="viewCambioContra.do"><sec:authentication property="name" /></a>
 						<sec:authentication property="authorities" />
 						<br /> <a href="logout">Cerrar Sesi&oacute;n</a>
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="row bandaLogo">
-		<div class="row col-lg-3">
-			<img alt="SIGA" src="${pageContext.request.contextPath}/estaticos/images/siga.png" class="img-responsive img-circle imgLogo" />
-		</div>
-		<div class="row col-lg-9"></div>
-	</div>
-
-	<div class="row col-lg-12">
-		<div class="col-lg-3">
-			<div class="panel-group" id="accordion">
-			
-
-				
-				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#menuCompras"> <span class="glyphicon glyphicon-folder-close"></span>Compras</a>
-						</h4>
-					</div>
-					<div id="menuCompras" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="frmRealizarCompra.do?claveEmpresa=<sec:authentication property='name' />">Compras</a>
-							</li>
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoProductos.do?claveEmpresa=<sec:authentication property='name' />">Productos</a>
-							</li>
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoLinea.do?claveEmpresa=<sec:authentication property='name' />">Lineas</a>
-							</li>
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoMarca.do?claveEmpresa=<sec:authentication property='name' />">Marcas</a>
-							</li>
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="catalogoProveedores.do?claveEmpresa=<sec:authentication property='name' />">Proveedores</a>
-							</li>
-							
-							<li class="list-group-item">
-								<span class="glyphicon glyphicon-th-list text-info"></span>
-								<a href="frmAsignaPrecios.do?claveEmpresa=<sec:authentication property='name' />">Asignar Precios</a>
-							</li>
-						</ul>
-					</div>
+					</p>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Desplegar navegación</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
 				</div>
-				
-				
-
-
-				
-				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#menuSeis"> <span class="glyphicon glyphicon-folder-close"></span>Finanzas
-							</a>
-						</h4>
-					</div>
-					<div id="menuSeis" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span> <a href="#">Articles</a>
-								<ul class="list-group">
-									<li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span> <a href="#">Articles</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-file text-info"></span> <a href="#">Newsletters</a></li>
-									<li class="list-group-item"><span class="glyphicon glyphicon-comment text-success"></span> <a href="#">Comments</a></li>
+	
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Nada aun<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Nada</a></li>
+								<li><a href="#">Nada</a></li>
+								<li><a href="#">Nada</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Nada</a></li>
+							</ul></li>
+					</ul>
+					<sec:authorize access="hasRole('admin')">
+						<ul class="nav navbar-nav">
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Administraci&oacute;n<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Nada</a></li>
+									<li><a href="#">Nada</a></li>
+									<li><a href="#">Nada</a></li>
+									<li class="divider"></li>
+									<li class="dropdown-submenu"><a tabindex="-1" href="#">Nada</a>
+										<ul class="dropdown-menu">
+											<li><a tabindex="-1" href="#">Nada</a></li>
+											<li><a tabindex="-1" href="#">Nada</a></li>
+										</ul></li>
+									<li class="dropdown-submenu"><a tabindex="-1" href="#">Nada</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Nada</a></li>
+											<li><a href="#">Nada</a></li>
+											<li><a href="#">Nada</a></li>
+											<li><a href="#">Nada</a></li>
+											<li><a href="#">Nada</a></li>
+										</ul></li>
+									<li class="divider"></li>
+									<li><a href="catalogoUsersAdmin.do">Catalogo de Usuarios</a></li>
 								</ul></li>
 						</ul>
-					</div>
+					</sec:authorize>
 				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#menuSiete"> <span class="glyphicon glyphicon-briefcase"></span>Inteligencia de Negocio
-							</a>
-						</h4>
-					</div>
+			</nav>
 				
-				</div>
-			</div>
 		</div>
-
-		<div class="col-lg-9">
+	
+		<div class="row-fluid col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<p class="titulo">
@@ -132,47 +85,37 @@
 				</div>
 			</div>
 		</div>
-
-	</div>
-
-	<div class="row">
-		<div class="row col-lg-12 footer">
+		
+		<div class="row">
+		<div class="col-lg-12 footer navbar navbar-default" id="estilo1">
 			<div class="col-lg-12">
-				<p class="center-block">   Rosela Desin 2016-2017 &copy; Todos los derechos reservados</p>
+			</br>
+			
+				<p class="center-block">   Rosela Desings Pro 2016-2017 &copy; Todos los derechos reservados</p>
 			</div>
+			 <div class="col-lg-2"></div>
 			<div class="col-lg-12">
 				<a href="#" class="center-block">Aviso de privacidad</a>
 			</div>
 		</div>
 	</div>
 
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/jquery-2.1.3.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/jquery-ui-1.9.2.custom.min.js"></script> --%>
-	<script src="${pageContext.request.contextPath}/estaticos/js/bootstrap.min.js"></script>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/direcciones.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/jquery.validate.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/jquery.dataTables.min.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/dataTables.jqueryui.min.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/personalizadas.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/reloj.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/validaciones.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/precio.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/jquery-ui-1.9.2.custom.min.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/comunes.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/jquery-ui.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/asignacreditocliente.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/asignapreciosproducto.js"></script>  --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/lineas-marcas.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/bootstrap-toggle.min.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/variables.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/jqxcore.js"></script> --%>
-<%--     <script src="${pageContext.request.contextPath}/estaticos/js/jqxdata.js"></script> --%>
-<%--     <script src="${pageContext.request.contextPath}/estaticos/js/jqxdraw.js"></script> --%>
-<%--     <script src="${pageContext.request.contextPath}/estaticos/js/jqxgauge.js"></script> --%>
-<%-- 	<script src="${pageContext.request.contextPath}/estaticos/js/indicadores.js"></script> --%>
+	</div>
 	
 	
 	
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/jquery-2.1.3.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/bootstrap.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/bootstrap.min.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/bootstrap.min.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/bootstrap-submenu.min.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/jquery.dataTables.min.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/dataTables.jqueryui.min.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/dataTable.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/personalizadas.js"></script>
+	<script charset="UTF-8" src="${pageContext.request.contextPath}/estaticos/js/comunes.js"></script>
+	<script src="${pageContext.request.contextPath}/estaticos/js/validaciones.js"></script>
+		<script src="${pageContext.request.contextPath}/estaticos/js/MooTools-Core-1.6.0.js"></script>
 
 </body>
 </html>
