@@ -16,34 +16,59 @@
     <div id="contenidos">
     
        <div id="columna1">
-		<div class="list-group" id="borde2">
-		<a href="#" class="list-group-item active">Panel de selección</a> 
-		<a href="#" class="list-group-item">Selección</a> 
-		<a href="#" class="list-group-item">Aplicar Textura</a> 
-		<a href="#" class="list-group-item">Aplicar Decoración</a> 
-		<a href="#" class="list-group-item">Exportar</a>
+		<div class="list-group">
+		<a href="#" class="list-group-item active">Herramientas</a> 
+		<a href="#" class="list-group-item"><img alt="Seleccionar" src="${pageContext.request.contextPath}/estaticos/imagenes/varita.png" class="img-responsive" id="imagen"/></a> 
+		<a href="#" class="list-group-item"><img alt="Aplicar textura" src="${pageContext.request.contextPath}/estaticos/imagenes/textura.png" class="img-responsive"id="imagen" /></a> 
+		<a href="#" class="list-group-item"><img alt="Aplicar decoración" src="${pageContext.request.contextPath}/estaticos/imagenes/decorcion.png" class="img-responsive" id="imagen"/></a> 
+		<a href="#" class="list-group-item"><img alt="Exportar imagen" src="${pageContext.request.contextPath}/estaticos/imagenes/exportar.png" class="img-responsive" id="imagen"/></a>
+		<a href="#" class="list-group-item"><img alt="Cancelar" src="${pageContext.request.contextPath}/estaticos/imagenes/cancelar.png" class="img-responsive" id="imagen"/></a>
 		</div>
 		</div>
 		
-        <div id="columna2">
-        <div>
-        <img src="https://image.freepik.com/foto-gratis/texturas--ropa--vestuario--telas_3293102.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-        </div>
-        </div>
+		<div id="hola">sdfsdfddddddddddddddddddddddddddddddddddd
+		d
+		sdsf
+		ds
+		sd
+		sd
+		ds
+		ds
+		ds
+		sd
+		d
+		ss
+		d
+		ds
+		sd
+		sd
+		ds
+		ds
+		ds
+		
+		ds
+		d
+		sd
+		
+		
+		
+		
+		
+		</div>
+
         <div id="columna3">
         <div id="borde"></div>
         </br>
         <div id="borde"></div>
-        </br>
-        <div id="borde">
-      <label>Brillo:</label>
-      <input type="range"  value="50" min="0" max="100">
-       <label>Opacidad:</label>
-      <input type="range"  value="50" min="0" max="100">
-        </div>
  
         <div id="div4">
+        <label>Brillo:</label>
+      	<input type="range"  value="50" min="0" max="100">
+       	<label>Opacidad:</label>
+      	<input type="range"  value="50" min="0" max="100">
+      	<hr>
          <button type="button" class="btn btn-info btn-xs" id="anchobtn">Importar Decoración</button>
+         <br> <br>
          <button type="button" class="btn btn-warning btn-xs" id="anchobtn">Importar Textura</button>
         </div>
         </div>

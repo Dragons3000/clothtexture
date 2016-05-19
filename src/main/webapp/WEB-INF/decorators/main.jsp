@@ -47,35 +47,28 @@
 						<ul class="nav navbar-nav">
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Administraci&oacute;n<b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Nada</a></li>
-									<li><a href="#">Nada</a></li>
-									<li><a href="#">Nada</a></li>
-									<li class="divider"></li>
-									<li class="dropdown-submenu"><a tabindex="-1" href="#">Nada</a>
-										<ul class="dropdown-menu">
-											<li><a tabindex="-1" href="#">Nada</a></li>
-											<li><a tabindex="-1" href="#">Nada</a></li>
-										</ul></li>
-									<li class="dropdown-submenu"><a tabindex="-1" href="#">Nada</a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Nada</a></li>
-											<li><a href="#">Nada</a></li>
-											<li><a href="#">Nada</a></li>
-											<li><a href="#">Nada</a></li>
-											<li><a href="#">Nada</a></li>
-										</ul></li>
-									<li class="divider"></li>
 									<li><a href="catalogoUsersAdmin.do">Catalogo de Usuarios</a></li>
 								</ul></li>
 						</ul>
-						
-							<ul class="nav navbar-nav">
-							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Ayuda<b class="caret"></b></a>
-						</li>
+					</sec:authorize>
+					
+					
+						<ul class="nav navbar-nav">
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Nomenclátor<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Catalogo Texturas</a></li>
+									<li><a href="#">Catalogo Decoraciones</a></li>
+								</ul></li>
 						</ul>
 						
 						
-					</sec:authorize>
+						<ul class="nav navbar-nav">
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Ayuda<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Acerca de</a></li>
+									<li><a href="#">Aviso de privacidad</a></li>
+								</ul></li>
+						</ul>
 				</div>
 			</nav>
 				

@@ -8,6 +8,13 @@
 #contenidos {
     display: table-row;
 }
+
+#imagen {
+	display:block;
+	text-align:center;
+    width: 75px;  /*ancho*/
+    height: 55px; /*altura*/
+}
 #columna3 {
     display: table-cell;
     border: 1px solid #000;
@@ -18,10 +25,10 @@
 #columna1{
      display: table-cell;
     border: 1px solid #000;
-   
-  
-  
+    width: 400px;  /*ancho*/
+    height: 400px; /*altura*/
 }
+
 
 #columna2{
     border: 1px solid #000;
@@ -35,10 +42,13 @@
 	  padding: 50px;
 }
 
-#borde2{
-	 border: 1px solid #000;
-	 width: 150px;  /*ancho*/
-    height: 550px; /*altura*/
+#hola{
+	border: 1px solid #FF9900;
+	color: #cc0000;
+ 	margin: 0 auto;          
+ 	width: 600px;
+ 	height: 500px;
+ 	left: 20px;
 }
 
 #div4{
