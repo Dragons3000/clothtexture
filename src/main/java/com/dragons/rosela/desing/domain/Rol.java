@@ -1,7 +1,7 @@
 package com.dragons.rosela.desing.domain;
 
 public class Rol {
-//	private String idRol;
+	private String idRol;
 	private String nombreRol;
 
 	public String getIdRol() {
