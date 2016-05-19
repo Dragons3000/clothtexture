@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/dataTables.jqueryui.min.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/banner.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/estaticos/css/principal.css"/>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
 	
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav">
-						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Nada aun<b class="caret"></b></a>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuraciones<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Nada</a></li>
 								<li><a href="#">Nada</a></li>
@@ -67,6 +68,13 @@
 									<li><a href="catalogoUsersAdmin.do">Catalogo de Usuarios</a></li>
 								</ul></li>
 						</ul>
+						
+							<ul class="nav navbar-nav">
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Ayuda<b class="caret"></b></a>
+						</li>
+						</ul>
+						
+						
 					</sec:authorize>
 				</div>
 			</nav>

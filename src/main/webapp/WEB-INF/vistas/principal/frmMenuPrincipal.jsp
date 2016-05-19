@@ -11,17 +11,48 @@
 
 <body>
 
-	<div id="imagen"> <img src="${pageContext.request.contextPath}/estaticos/imagenes/perro.jpg" width="550" height="400"></div>
-	<form action="">
-	<p id="texto">Control visual de la imagen</p>
-	<p>
-	<input type="button" value="Esconder imagen" onclick="#('imagen').setOpacity(0);">
-	<input type="button" value="Difuminar 50%" onclick="#('imagen').setOpacity(5);">
-	<input type="button" value="Reestablecer imagen" onclick="#('imagen').setOpacity(1);">
-	<input type="button" value="Texto Rojo" onclick="#('texto').setStyle('color','red');">
-	<input type="button" value="Texto Azul" onclick="#('texto').setStyle('color','blue');">
-	</p>
-	</form>
+	<div id="contenedor">
+	
+    <div id="contenidos">
+    
+       <div id="columna1">
+		<div class="list-group" id="borde2">
+		<a href="#" class="list-group-item active">Panel de selección</a> 
+		<a href="#" class="list-group-item">Selección</a> 
+		<a href="#" class="list-group-item">Aplicar Textura</a> 
+		<a href="#" class="list-group-item">Aplicar Decoración</a> 
+		<a href="#" class="list-group-item">Exportar</a>
+		</div>
+		</div>
+		
+        <div id="columna2">
+        <div>
+        <img src="https://image.freepik.com/foto-gratis/texturas--ropa--vestuario--telas_3293102.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+        </div>
+        </div>
+        <div id="columna3">
+        <div id="borde"></div>
+        </br>
+        <div id="borde"></div>
+        </br>
+        <div id="borde">
+      <label>Brillo:</label>
+      <input type="range"  value="50" min="0" max="100">
+       <label>Opacidad:</label>
+      <input type="range"  value="50" min="0" max="100">
+        </div>
+ 
+        <div id="div4">
+         <button type="button" class="btn btn-info btn-xs" id="anchobtn">Importar Decoración</button>
+         <button type="button" class="btn btn-warning btn-xs" id="anchobtn">Importar Textura</button>
+        </div>
+        </div>
+        
+    </div>
+    
+
+    
+</div>
 
 
 

@@ -1,0 +1,51 @@
+#contenedor {
+    display: table;
+    border: 2px solid #000;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+#contenidos {
+    display: table-row;
+}
+#columna3 {
+    display: table-cell;
+    border: 1px solid #000;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#columna1{
+     display: table-cell;
+    border: 1px solid #000;
+   
+  
+  
+}
+
+#columna2{
+    border: 1px solid #000;
+    vertical-align: middle;
+    width: 700px;  /*ancho*/
+    height: 550px; /*altura*/
+}
+
+#borde{
+	 border: 1px solid #000;
+	  padding: 50px;
+}
+
+#borde2{
+	 border: 1px solid #000;
+	 width: 150px;  /*ancho*/
+    height: 550px; /*altura*/
+}
+
+#div4{
+	 border: 1px solid #000;
+	  padding: 40px;
+}
+
+#anchobtn{
+	   width: 130px;  /*ancho*/
+}
